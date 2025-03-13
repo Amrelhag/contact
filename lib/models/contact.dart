@@ -1,6 +1,6 @@
 import 'dart:io';
 
-abstract class Contacts{
+ class Contacts{
 
  File image;
  String name;
@@ -9,5 +9,7 @@ abstract class Contacts{
 
  Contacts({required this.image,required this.name,
    required this.phone,required this.email});
+
+static List<Contacts> contacts=[];
 
 }
